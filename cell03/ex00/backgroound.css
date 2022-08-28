@@ -1,0 +1,26 @@
+body {
+    background-color: white;
+}
+button {
+    padding: 1.5rem 2.4rem;
+    border: 450px rgb(9, 7, 7);
+    border-radius: 20px;
+    color: #38386b;
+    margin: 10px 10px 10px 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient( #9f9fdc 5%, #6868b5 75%, #484894 100%);
+    /* border: white; */
+}
+.button:hover{
+    /* padding: 1.5rem 2.4rem; */
+    text-transform: uppercase;
+    border: 450px rgb(239, 235, 235); 
+    /* border-radius: 20px; */
+    color: rgb(249, 231, 247);
+    /* margin: 10px 10px 10px 10px; */
+    /* font-size: 1.5rem; */
+    font-weight: bolder;
+    /* background: linear-gradient( #ff6c6c 0%, #904444 35%, #5c2626 100%); */
+    /* border: white; */
+}
