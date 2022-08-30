@@ -1,0 +1,49 @@
+/* * {
+    box-sizing: border-box;
+} */
+h1 {
+    text-align: center;
+    color: rgb(34, 36, 169);
+}
+h3 {
+    color: rgb(70, 134, 228);
+}
+h4 {
+    font-size: 100%;
+    color:rgb(8, 10, 127)
+}
+button {
+    color: white;
+    background-color: rgb(4, 62, 149);
+    font-weight: lighter;
+    font-size: 120%;
+    padding: 5px 5px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    color: rgb(4, 62, 149);
+    background-color: white;
+}
+.all {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 5px 10px;
+    margin: 10px 10px 10px 10px;
+}
+.in-card {
+    box-shadow: 2px 4px 10px 1px rgba(48, 118, 179, 0.544);
+    background-color: rgb(173, 212, 243);
+    width: auto;
+    text-align: center;
+}
+.in-card img {
+    object-fit: cover;
+    width: 100%;
+}

@@ -1,0 +1,52 @@
+.menu {
+    display: flex;
+    
+}
+
+.menu_hover {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 5px;
+    color: rgb(248, 249, 250);
+    background-color: rgb(4, 45, 89);
+    font-size: 20px; 
+    padding: 5px 15px 5px 15px;
+    border: none;
+    /* border-radius: 10px */
+    
+}
+.menu_hover:hover {
+    color: rgb(4, 45, 89);
+    background-color: rgb(151, 196, 245);
+    /* display: block; */
+}
+.dropdown {
+    position: absolute;
+    display: none;
+    /* background-color: rgb(98, 168, 244); */
+    
+} 
+.menu:hover .dropdown {
+    display: block;
+    /* top: 45px; */
+    margin-top: 30px;
+}
+/* .dropdown:hover .menu {
+    display: block;
+} */
+.dropdown a {
+    display: block;
+    text-decoration: none;
+    color: rgb(4, 45, 89);
+    background-color: rgb(98, 168, 244);
+    font-size: 18px; 
+    padding: 5px 15px 5px 15px;
+    border: none;
+    /* border-radius: 10px */
+    
+}
+.dropdown a:hover {
+    color: rgb(246, 249, 250);
+    cursor: pointer;
+    background: rgb(61, 149, 243);
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <style>
+            h1 {
+                text-align: center;
+                color: rgb(9, 78, 158);
+                margin-top: 15%;
+            }
+            h3 {
+                text-align: right;
+                color: rgb(9, 78, 158);
+                margin: 3% 11%;
+                /* margin-top: 15%; */
+            }
+            .cal {
+                display: flex;
+                justify-content: center;
+                background-color:rgb(104, 154, 247);
+                width: 80%;
+                padding: 2% 2% 2% 2%;
+                border-radius: 15px;
+                margin: 5% 5% 0% 5%;
+            }
+            .cal input {
+                background-color: rgb(170, 205, 244);
+                border: none;
+                border-radius: 15px;
+                font-size: 100%;
+                text-align: center;
+                width: 30%;
+                height: auto;
+                padding: 15px 15px 15px 15px;
+                margin: 15px 15px 15px 15px;
+            }
+            .cal button{
+                background-color: rgb(209, 13, 59);
+                color: white;
+                border: none;
+                width: 15%;
+                height: auto;
+                border-radius: 15px;
+                font-size: 100%;
+                padding: 10px 10px 10px 10px;
+                margin: 15px 15px 15px 15px;
+            }
+            .cal select {
+                background-color: rgb(209, 13, 59);
+                color: white;
+                border: none;
+                width: 10%;
+                border-radius: 15px;
+                font-size: 100%;
+                padding: 10px 10px 10px 10px;
+                margin: 15px 15px 15px 15px;
+            }
+        </style>
+        <script>
+            let time;
+		    window.onload = () => {
+			setTimeout(() => {
+				if (!time) {
+					alert('Please, use me...');
+				}
+			}, 30 * 1000);
+		}
+            function calc() {
+                time = 1;
+                console.log("ready!!!!");
+                let ans;
+                let txt;
+                const x = Number(document.getElementById('nb1').value);
+			    const y = Number(document.getElementById('nb2').value);
+			    const s = document.getElementById('sign');
+			    const s1 = s.options[s.selectedIndex].text;
+			if (x >= 0 && y >= 0) {
+				if (s1 === '+') {
+                    ans = x + y;
+                } else if (s1 === '-') {
+                    ans = x - y;
+                } else if (s1 === 'x') {
+                    ans = x * y;
+                } else if ((s1 === '/' || s1 === '%') && y === 0) {
+                    txt = "It's over 9000!"
+                } else if (s1 === '/') {
+                    ans = x / y;
+                } else {
+                    ans = x % y;
+                }
+			} 
+            else {
+                txt = 'Error :('
+            }
+			console.log(ans !== undefined ? `${x} ${s1} ${y} = ${ans}` : txt);
+			alert(ans !== undefined ? `${x} ${s1} ${y} = ${ans}` : txt);
+            }    
+        </script>
+        <title>Calculator</title>
+        <h1>Calculator in Cell 3-2</h1>
+    </head>
+    <body>
+        <div class="cal" style="align-items: center;">
+            <input type="number" id="nb1" placeholder="Enter the first number" />
+            <select id="sign">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="x">x</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+            <input type="number" id="nb2" placeholder="Enter the second number" />
+            <button onclick="calc()">Try me!</button>
+        </div>
+        <h3>By pnamwayk</h3>
+    </body>
+</html>
