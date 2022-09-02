@@ -1,1 +1,1 @@
-find . \( -type d -o -type f \) | wc -l | tr -d ' '  
+ls | wc -l | tr -d ' '  
