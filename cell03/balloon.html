@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.balloon {
+			background-color: red;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+		}
+		.balloon :hover {
+			width: width-5px;
+			height: height-5px;
+		}
+	</style>
+	<script>
+		// let width = 200;
+		// let height = 200;
+		// function change(w, h)
+		// {
+		// 	if (w < 410 && h < 410)
+		// 	{
+		// 		w += 10;
+		// 		h += 10;
+		// 	} else {
+		// 		w = 200;
+		// 		h = 200;
+		// 	}
+
+		// }
+		class Circle {
+			constructor(width, height, radius, color) {
+				this.width = width;
+				this.height = height;
+				this.radius = radius;
+				this.color = color;
+			}
+			create(balloon) {
+				balloon.beginPath();
+				balloon.arc(this.width, this.height, this.radius, this.color, 0, Math.PI*2, false);
+				balloon.stroke();
+				balloon.closePath();
+			}
+		}
+		let my_balloon = new Circle(200, 200, 50, "red");
+		my_balloon.create(context);
+		// function change_bgColors(bg)
+		// {
+		// 	if (bg = )
+		// }
+	</script>
+</head>
+<body>
+	<!-- <div class="balloon" onclick="change(style.width,style.height)";">
+
+		<!-- <button onclick="change(width,height)"></button> -->
+	</div> -->
+</body>
+</html>
