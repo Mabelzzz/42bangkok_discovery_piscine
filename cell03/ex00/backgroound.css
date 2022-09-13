@@ -12,8 +12,7 @@ button {
     background: linear-gradient( #9f9fdc 5%, #6868b5 75%, #484894 100%);
 }
 .button:hover{
-    text-transform: uppercase;
-    border: 450px rgb(239, 235, 235); 
+    border: 450px rgb(239, 235, 235);
     color: rgb(249, 231, 247);
     font-weight: bolder;
 }
